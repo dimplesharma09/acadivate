@@ -774,3 +774,5 @@ const FaqItem = ({ q, a, isOpen, onClick }: { q: string; a: string; isOpen: bool
     </motion.div>
   </div>
 );
+
+export default Awards;

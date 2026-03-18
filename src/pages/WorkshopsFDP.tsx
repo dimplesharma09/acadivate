@@ -194,3 +194,5 @@ const FeatureItem = ({ icon, title, desc }: { icon: React.ReactNode; title: stri
     <p className="text-text-muted leading-relaxed">{desc}</p>
   </div>
 );
+
+export default WorkshopsFDP;

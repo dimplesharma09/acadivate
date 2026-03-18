@@ -367,3 +367,5 @@ const CountryCard = ({ flag, name, email, phone, isHQ }: { flag: string; name: s
     </div>
   </div>
 );
+
+export default Contact;

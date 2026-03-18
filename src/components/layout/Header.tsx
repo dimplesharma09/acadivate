@@ -18,6 +18,8 @@ export const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+  
+
 
   React.useEffect(() => {
     setIsMobOpen(false);
@@ -137,7 +139,7 @@ const DropdownItem = ({ icon, label, href }: { icon: React.ReactNode; label: str
     className="flex items-center gap-4 px-3 py-3 rounded-2xl text-[14px] font-bold text-navy hover:bg-bg-soft hover:text-primary transition-all duration-200 group/item"
   >
     <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary shrink-0 group-hover/item:bg-primary/10 transition-colors">
-      {React.cloneElement(icon as React.ReactElement, { size: 18 })}
+   {React.cloneElement(icon as React.ReactElement<{ size?: number }>, { size: 18 })}
     </div>
     <span className="leading-tight">{label}</span>
   </Link>
@@ -206,7 +208,7 @@ const MegaMenu = () => (
 const MegaLink = ({ icon, title, sub }: { icon: React.ReactNode; title: string; sub: string }) => (
   <Link href="#" className="flex items-center gap-4 p-3 rounded-2xl border border-transparent hover:bg-bg-soft hover:border-black/5 transition-all duration-200 group/mlink">
     <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary shrink-0 group-hover/mlink:bg-primary/10 transition-colors">
-      {React.cloneElement(icon as React.ReactElement, { size: 18 })}
+      {/* {React.cloneElement(icon as React.ReactElement, { size: 18 })} */}
     </div>
     <div>
       <div className="text-[13.5px] font-bold text-navy leading-tight">{title}</div>

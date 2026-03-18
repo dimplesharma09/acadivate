@@ -118,3 +118,5 @@ export const InternationalConferences = () => {
     </div>
   );
 };
+
+export default InternationalConferences;

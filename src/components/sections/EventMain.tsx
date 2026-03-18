@@ -359,7 +359,7 @@ export const EventMain = () => {
                     <textarea rows={4} placeholder="Share your thoughts, questions, or academic insights…" className="w-full px-5 py-4 rounded-xl bg-bg-soft border border-border-light focus:border-primary focus:bg-app-bg outline-none transition-all resize-none" />
                   </div>
                   <div className="md:col-span-2">
-                    <Button variant="navy" className="px-10 py-4 rounded-xl shadow-sh-md group/btn">
+                    <Button variant="primary" className="px-10 py-4 rounded-xl shadow-sh-md group/btn">
                       Post Comment <ArrowRight size={18} className="group-hover/btn:translate-x-1 transition-transform" />
                     </Button>
                   </div>

@@ -141,3 +141,5 @@ export const ResearchForums = () => {
     </div>
   );
 };
+
+export default ResearchForums;
