@@ -8,25 +8,25 @@ import { Button } from '../ui/Button';
 
 const SLIDES = [
   {
-    tag: 'International Research Conference 2026 · Malaysia',
-    title: 'Global Platform for Academic Research, Innovation & Collaboration',
-    desc: 'Join a leading international research conference bringing together scholars, researchers, and institutions to share knowledge, publish research, and build global academic collaborations.',
+    tag: 'Global Research Hub · 2026',
+    title: 'Advancing Academic Research & Innovation',
+    desc: 'Connecting scholars and institutions to foster research breakthroughs and strategic global collaborations through innovation.',
     image: 'https://picsum.photos/seed/hero1/1600/900',
-    bc: 'International Research Conference 2026'
+    bc: 'Research & Innovation'
   },
   {
     tag: 'Call for Papers · ICASD 2026',
-    title: 'International Conference on Sustainable Development 2026',
-    desc: 'Submit your research paper and present your work at a global academic conference focused on sustainable development, innovation, and research excellence.',
+    title: 'International Conference on Sustainable Development',
+    desc: 'Submit your research to a premier global platform focused on pioneering solutions for a sustainable and innovative future.',
     image: 'https://picsum.photos/seed/hero2/1600/900',
-    bc: 'ICASD 2026 Conference'
+    bc: 'ICASD 2026'
   },
   {
-    tag: 'Research Awards & Rankings 2026',
-    title: 'Recognizing Excellence in Research & Academic Innovation',
-    desc: 'Explore global research awards, institutional rankings, and peer-reviewed recognition programs designed to highlight outstanding academic contributions.',
+    tag: 'Scholarly Awards · 2026',
+    title: 'Celebrating Excellence in Research Innovation',
+    desc: 'Recognizing outstanding academic impact through peer-reviewed awards and prestigious institutional rankings globally.',
     image: 'https://picsum.photos/seed/hero3/1600/900',
-    bc: 'Research Awards & Rankings 2026'
+    bc: 'Awards & Rankings'
   }
 ];
 

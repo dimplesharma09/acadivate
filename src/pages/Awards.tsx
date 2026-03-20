@@ -122,10 +122,10 @@ export const Awards = () => {
           <img src="https://picsum.photos/seed/heroawards/1920/1080" alt="Hero" className="w-full h-full object-cover object-center" />
           <div className="absolute inset-0 bg-linear-to-b from-app-bg via-app-bg/80 to-app-bg" />
         </div>
-        
+
         {/* Art Deco Pattern */}
         <div className="absolute inset-0 pointer-events-none opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(18,167,207,.1) 1px,transparent 1px), linear-gradient(90deg,rgba(18,167,207,.1) 1px,transparent 1px)', backgroundSize: '60px 60px' }} />
-        
+
         <div className="max-w-7xl mx-auto px-6 relative z-10 w-full">
           <div className="grid lg:grid-cols-[1fr_450px] gap-16 items-center">
             <motion.div
@@ -137,16 +137,16 @@ export const Awards = () => {
                 <div className="w-6 h-px bg-primary" />
                 <span className="text-[10px] font-bold tracking-[3px] uppercase text-primary">Acadivate Excellence Awards · 2026</span>
               </div>
-              
+
               <h1 className="font-serif text-5xl md:text-7xl font-bold text-navy leading-[1.05] mb-6">
                 Honour the<br />
                 <span className="italic shim">Extraordinary.</span>
               </h1>
-              
+
               <p className="font-prose text-lg text-text-muted leading-relaxed max-w-xl mb-10">
                 The Acadivate Excellence Awards celebrate the scholars, researchers, and institutions whose work is rewriting the rules of global academia — across 33 categories, 15+ countries, and every discipline.
               </p>
-              
+
               <div className="flex flex-wrap gap-4 mb-12">
                 <Button variant="gold" size="lg" className="rounded-xl px-8 py-4 text-base shadow-sh-gold hover:shadow-sh-gold-lg">
                   <Download size={18} className="mr-2" /> Submit Nomination
@@ -155,15 +155,15 @@ export const Awards = () => {
                   <Award size={18} className="mr-2" /> Explore Categories
                 </Button>
               </div>
-              
-              <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-primary/10 border border-primary/10 rounded-2xl overflow-hidden backdrop-blur-sm">
+
+              {/* <div className="grid grid-cols-2 sm:grid-cols-4 gap-px bg-primary/10 border border-primary/10 rounded-2xl overflow-hidden backdrop-blur-sm">
                 <StatItem label="Categories" value="33" plus />
                 <StatItem label="Laureates" value="500" plus />
                 <StatItem label="Countries" value="15" plus />
                 <StatItem label="Years" value="4" />
-              </div>
+              </div> */}
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
@@ -182,13 +182,13 @@ export const Awards = () => {
                 {/* Scan Line */}
                 <div className="absolute top-0 left-0 right-0 h-0.5 bg-linear-to-r from-transparent via-primary/30 to-transparent animate-[scan_3s_ease-in-out_infinite]" />
               </div>
-              
-              <div className="grid grid-cols-2 gap-3 w-full">
+
+              {/* <div className="grid grid-cols-2 gap-3 w-full">
                 <MetricCard label="Deadline" value="31" sub="Mar" />
                 <MetricCard label="Ceremony" value="Sep" sub="'26" />
                 <MetricCard label="Jury Experts" value="30" plus />
                 <MetricCard label="Institutions" value="80" plus />
-              </div>
+              </div> */}
             </motion.div>
           </div>
         </div>
@@ -222,24 +222,24 @@ export const Awards = () => {
               >
                 {/* Art Deco Corner */}
                 <div className="absolute top-6 right-6 w-8 h-8 border-t-2 border-r-2 border-luxury-gold/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                
+
                 <div className="relative z-10">
                   <div className={cn(
                     "w-14 h-14 rounded-2xl flex items-center justify-center mb-8 transition-all duration-300 group-hover:bg-luxury-gold/20 group-hover:text-luxury-gold",
                     cat.color === 'gold' ? "bg-luxury-gold/10 text-luxury-gold" :
-                    cat.color === 'teal' ? "bg-teal/10 text-teal" :
-                    cat.color === 'wine' ? "bg-luxury-wine/10 text-luxury-wine" :
-                    "bg-navy/10 text-navy"
+                      cat.color === 'teal' ? "bg-teal/10 text-teal" :
+                        cat.color === 'wine' ? "bg-luxury-wine/10 text-luxury-wine" :
+                          "bg-navy/10 text-navy"
                   )}>
                     <Trophy size={28} />
                   </div>
-                  
+
                   <div className="text-[10px] font-bold tracking-[2px] uppercase text-text-subtle mb-2 group-hover:text-white/40 transition-colors">Category {cat.id}</div>
                   <h3 className="font-serif text-2xl font-bold text-luxury-ink mb-4 group-hover:text-white transition-colors leading-tight">{cat.title}</h3>
                   <p className="font-prose text-base text-text-muted mb-8 group-hover:text-white/60 transition-colors leading-relaxed">
                     {cat.desc}
                   </p>
-                  
+
                   <div className="flex flex-wrap gap-2">
                     {cat.tags.map(tag => (
                       <span key={tag} className="text-[11px] font-bold px-3 py-1 rounded-full border border-border-light text-text-muted group-hover:border-luxury-gold/40 group-hover:text-luxury-gold group-hover:bg-luxury-gold/10 transition-all">
@@ -248,7 +248,7 @@ export const Awards = () => {
                     ))}
                   </div>
                 </div>
-                
+
                 <div className="absolute top-8 right-8 text-[9px] font-bold tracking-[1.5px] uppercase bg-bg-light border border-border-light px-3 py-1 rounded-full text-text-muted group-hover:bg-luxury-gold/20 group-hover:border-luxury-gold/40 group-hover:text-luxury-gold transition-all">
                   {cat.count}
                 </div>
@@ -277,32 +277,32 @@ export const Awards = () => {
           <div className="relative grid md:grid-cols-2 lg:grid-cols-4 gap-12">
             {/* Connecting Line */}
             <div className="hidden lg:block absolute top-12 left-[12.5%] right-[12.5%] h-px border-t border-dashed border-luxury-gold/40" />
-            
-            <TimelineStep 
-              num="01" 
-              title="Register and Select a Category" 
-              desc="Create your Acadivate account, browse the 33 award categories, and select the one that best aligns with your field." 
+
+            <TimelineStep
+              num="01"
+              title="Register and Select a Category"
+              desc="Create your Acadivate account, browse the 33 award categories, and select the one that best aligns with your field."
               badge="Always Open"
               badgeColor="gold"
             />
-            <TimelineStep 
-              num="02" 
-              title="Submit Your Portfolio" 
-              desc="Upload your nomination portfolio — research outputs, citation metrics, CV, and supporting evidence." 
+            <TimelineStep
+              num="02"
+              title="Submit Your Portfolio"
+              desc="Upload your nomination portfolio — research outputs, citation metrics, CV, and supporting evidence."
               badge="Deadline: 31 Mar"
               badgeColor="teal"
             />
-            <TimelineStep 
-              num="03" 
-              title="Expert Jury Evaluation" 
-              desc="Our 30-member international academic jury evaluates every submission using a published scoring framework." 
+            <TimelineStep
+              num="03"
+              title="Expert Jury Evaluation"
+              desc="Our 30-member international academic jury evaluates every submission using a published scoring framework."
               badge="Apr–May 2026"
               badgeColor="navy"
             />
-            <TimelineStep 
-              num="04" 
-              title="Gala Ceremony and Awards" 
-              desc="Winners receive a gold medal, framed certificate, and laureate badge at our Annual Excellence Gala." 
+            <TimelineStep
+              num="04"
+              title="Gala Ceremony and Awards"
+              desc="Winners receive a gold medal, framed certificate, and laureate badge at our Annual Excellence Gala."
               badge="Sep 2026 · Delhi"
               badgeColor="wine"
             />
@@ -392,8 +392,8 @@ export const Awards = () => {
                 onClick={() => setActiveYear(year)}
                 className={cn(
                   "px-6 py-2.5 rounded-full text-[13px] font-bold border-1.5 transition-all duration-300",
-                  activeYear === year 
-                    ? "bg-luxury-ink border-luxury-ink text-white shadow-sh-md" 
+                  activeYear === year
+                    ? "bg-luxury-ink border-luxury-ink text-white shadow-sh-md"
                     : "bg-transparent border-border-light text-text-muted hover:border-luxury-ink hover:text-luxury-ink"
                 )}
               >
@@ -448,26 +448,26 @@ export const Awards = () => {
                 <span className="text-[10px] font-bold tracking-[3px] uppercase text-luxury-gold">Submit a Nomination</span>
                 <div className="flex-1 h-px bg-luxury-gold/20" />
               </div>
-              
+
               <h2 className="font-serif text-4xl md:text-5xl font-bold text-luxury-ink leading-tight mb-8">
                 Every Scholar Deserves<br /><span className="italic">to Be Seen</span>
               </h2>
-              
+
               <p className="font-prose text-lg text-text-muted leading-relaxed mb-10">
                 Whether you're nominating yourself, a colleague, or your institution — our process is open, merit-driven, and globally inclusive. No academic geography should go unrecognised.
               </p>
-              
+
               <div className="space-y-6 mb-12">
                 <Perk icon={<CheckCircle2 size={18} />} title="Open to All Nationalities" sub="Researchers and institutions from every country are eligible." color="gold" />
                 <Perk icon={<Award size={18} />} title="Transparent, Impartial Jury" sub="30 internationally recognised experts evaluate every submission." color="teal" />
                 <Perk icon={<Globe size={18} />} title="Global Visibility for Winners" sub="Award recognition, Scopus-linked profile, and laureate badge." color="primary" />
                 <Perk icon={<Download size={18} />} title="Multiple Nominations Allowed" sub="Nominate for up to 3 different categories per cycle." color="navy" />
               </div>
-              
+
               <Button variant="outline" size="lg" className="rounded-xl px-8 py-4 text-base border-luxury-ink text-luxury-ink hover:bg-luxury-ink hover:text-white">
                 <Download size={18} className="mr-2" /> Download Award Guidelines
               </Button>
-              
+
               <div className="mt-10 p-6 rounded-3xl bg-linear-to-br from-luxury-ink to-navy border border-luxury-gold/20 flex items-center gap-6">
                 <div className="w-14 h-14 rounded-2xl bg-luxury-gold/10 border border-luxury-gold/20 flex items-center justify-center text-luxury-gold shrink-0">
                   <Calendar size={24} />
@@ -479,7 +479,7 @@ export const Awards = () => {
                 </div>
               </div>
             </motion.div>
-            
+
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
@@ -488,7 +488,7 @@ export const Awards = () => {
             >
               <h3 className="font-serif text-2xl font-bold text-luxury-ink mb-2">Submit Your Nomination</h3>
               <p className="text-sm text-text-muted mb-8">All fields marked * are required. No payment at this stage.</p>
-              
+
               <form className="space-y-6">
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
@@ -500,7 +500,7 @@ export const Awards = () => {
                     <input type="text" placeholder="Your surname" className="w-full px-4 py-3 rounded-xl bg-bg-light border-1.5 border-border-light focus:outline-none focus:border-luxury-gold transition-all" />
                   </div>
                 </div>
-                
+
                 <div className="grid grid-cols-2 gap-4">
                   <div className="space-y-2">
                     <label className="text-[11px] font-bold uppercase tracking-wider text-text-muted">Email *</label>
@@ -511,7 +511,7 @@ export const Awards = () => {
                     <input type="text" placeholder="University / Organisation" className="w-full px-4 py-3 rounded-xl bg-bg-light border-1.5 border-border-light focus:outline-none focus:border-luxury-gold transition-all" />
                   </div>
                 </div>
-                
+
                 <div className="space-y-2">
                   <label className="text-[11px] font-bold uppercase tracking-wider text-text-muted">Award Category *</label>
                   <select className="w-full px-4 py-3 rounded-xl bg-bg-light border-1.5 border-border-light focus:outline-none focus:border-luxury-gold transition-all appearance-none cursor-pointer">
@@ -524,16 +524,16 @@ export const Awards = () => {
                     <option>Institutional Excellence</option>
                   </select>
                 </div>
-                
+
                 <div className="space-y-2">
                   <label className="text-[11px] font-bold uppercase tracking-wider text-text-muted">Statement of Contribution *</label>
                   <textarea rows={4} placeholder="Describe the scholarly contribution being nominated (min 30 words)…" className="w-full px-4 py-3 rounded-xl bg-bg-light border-1.5 border-border-light focus:outline-none focus:border-luxury-gold transition-all resize-none" />
                 </div>
-                
+
                 <Button variant="gold" size="lg" className="w-full rounded-2xl py-5 text-base shadow-sh-gold hover:shadow-sh-gold-lg">
                   <Send size={18} className="mr-2" /> Submit Nomination
                 </Button>
-                
+
                 <div className="flex items-center gap-2 text-[11px] text-text-subtle justify-center">
                   <CheckCircle2 size={12} /> Data handled per our Privacy Policy.
                 </div>
@@ -546,7 +546,7 @@ export const Awards = () => {
       {/* Testimonials Section */}
       <section className="py-24 bg-app-bg relative overflow-hidden border-t border-border-light">
         <div className="absolute inset-0 opacity-5 pointer-events-none" style={{ backgroundImage: 'radial-gradient(circle at 2px 2px, #0a1830 1px, transparent 0)', backgroundSize: '40px 40px' }} />
-        
+
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-luxury-gold/10 border border-luxury-gold/20 text-[10px] font-bold tracking-[2px] uppercase text-luxury-gold mb-6">
@@ -562,19 +562,19 @@ export const Awards = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Testimonial 
+            <Testimonial
               text="Receiving the Excellence in Research Award from Acadivate was a defining moment. The jury's feedback was extraordinarily detailed and the global visibility has opened collaboration opportunities I never anticipated."
               name="Prof. Rashida Ahmed"
               role="Excellence in Research Laureate · 2025"
               image="https://picsum.photos/seed/t1/100/100"
             />
-            <Testimonial 
+            <Testimonial
               text="The Scopus-linked laureate profile that Acadivate creates for every winner has measurably elevated my institution's research visibility globally. It is professional recognition in its truest form."
               name="Prof. David Tan"
               role="Institutional Excellence · Manipal Int'l University"
               image="https://picsum.photos/seed/t2/100/100"
             />
-            <Testimonial 
+            <Testimonial
               text="As a young researcher under 35, winning the Acadivate Young Researcher Award transformed my career trajectory. The jury selection was genuinely rigorous, which makes it all the more meaningful."
               name="Dr. Lin Wei"
               role="Young Researcher Award · Tsinghua University"
@@ -598,26 +598,26 @@ export const Awards = () => {
           </div>
 
           <div className="max-w-3xl mx-auto space-y-3">
-            <FaqItem 
-              q="Who is eligible to nominate for Acadivate Excellence Awards?" 
+            <FaqItem
+              q="Who is eligible to nominate for Acadivate Excellence Awards?"
               a="Any academic professional, researcher, PhD scholar, faculty member, or institution worldwide may submit a nomination. Self-nominations and third-party peer nominations are both accepted."
               isOpen={openFaq === 0}
               onClick={() => setOpenFaq(openFaq === 0 ? null : 0)}
             />
-            <FaqItem 
-              q="Is there a nomination fee, and are fee waivers available?" 
+            <FaqItem
+              q="Is there a nomination fee, and are fee waivers available?"
               a="Yes, a nominal nomination fee covers jury evaluation and administration. Fee waivers are available for researchers from low-income countries and early-career scholars who demonstrate financial need."
               isOpen={openFaq === 1}
               onClick={() => setOpenFaq(openFaq === 1 ? null : 1)}
             />
-            <FaqItem 
-              q="What recognition do award winners receive?" 
+            <FaqItem
+              q="What recognition do award winners receive?"
               a="Winners receive a gold-plated medal, framed certificate, commemorative memento, permanent laureate profile on acadivate.org (Scopus-linked), a digital badge, and a feature in our global academic newsletter."
               isOpen={openFaq === 2}
               onClick={() => setOpenFaq(openFaq === 2 ? null : 2)}
             />
-            <FaqItem 
-              q="How does the jury evaluation process work?" 
+            <FaqItem
+              q="How does the jury evaluation process work?"
               a="Each submission is evaluated independently by a minimum of 3 jury members with expertise in the relevant discipline. Evaluators use our published multi-criterion scoring matrix covering research impact, methodology, and originality."
               isOpen={openFaq === 3}
               onClick={() => setOpenFaq(openFaq === 3 ? null : 3)}
@@ -633,7 +633,7 @@ export const Awards = () => {
           <div className="absolute top-0 right-1/4 w-px h-full bg-linear-to-b from-transparent via-primary/20 to-transparent -rotate-12" />
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-primary/5 rounded-full blur-3xl" />
         </div>
-        
+
         <div className="max-w-3xl mx-auto px-6 text-center relative z-10">
           <div className="text-[11px] font-bold tracking-[4px] uppercase text-primary mb-8">Nominations Close 31 March 2026</div>
           <h2 className="font-serif text-4xl md:text-6xl font-bold text-navy leading-tight mb-8">
@@ -642,7 +642,7 @@ export const Awards = () => {
           <p className="font-prose text-lg text-text-muted leading-relaxed mb-12">
             The world needs to know about your research, leadership, and impact. Acadivate Excellence Awards gives scholars and institutions the global recognition they have earned.
           </p>
-          
+
           <div className="flex flex-wrap justify-center gap-4">
             <Button variant="gold" size="lg" className="rounded-2xl px-10 py-5 text-lg shadow-sh-gold hover:shadow-sh-gold-lg">
               Submit Nomination Now
@@ -651,7 +651,7 @@ export const Awards = () => {
               Download Guidelines
             </Button>
           </div>
-          
+
           <div className="mt-10 flex items-center justify-center gap-3 text-text-muted text-sm">
             <Calendar size={16} className="text-luxury-gold" />
             Deadline: <span className="text-luxury-gold font-bold">31 March 2026</span> &nbsp;·&nbsp; Ceremony: <span className="text-luxury-gold font-bold">Sep 2026</span>
@@ -685,17 +685,17 @@ const TimelineStep = ({ num, title, desc, badge, badgeColor }: { num: string; ti
     <div className="relative z-10 w-24 h-24 rounded-full bg-app-bg border-2 border-border-light flex flex-col items-center justify-center mx-auto mb-8 shadow-sh-sm group-hover:border-luxury-gold group-hover:shadow-sh-gold group-hover:bg-luxury-gold-pale transition-all duration-500">
       <div className="font-serif text-3xl font-bold text-luxury-ink group-hover:text-luxury-gold transition-colors">{num}</div>
     </div>
-    
+
     <div className={cn(
       "inline-block text-[10px] font-bold tracking-[1.5px] uppercase px-3 py-1 rounded-full mb-4",
       badgeColor === 'gold' ? "bg-luxury-gold/10 text-luxury-gold" :
-      badgeColor === 'teal' ? "bg-teal/10 text-teal" :
-      badgeColor === 'navy' ? "bg-navy/10 text-navy" :
-      "bg-luxury-wine/10 text-luxury-wine"
+        badgeColor === 'teal' ? "bg-teal/10 text-teal" :
+          badgeColor === 'navy' ? "bg-navy/10 text-navy" :
+            "bg-luxury-wine/10 text-luxury-wine"
     )}>
       {badge}
     </div>
-    
+
     <h3 className="font-serif text-lg font-bold text-luxury-ink mb-3 leading-tight">{title}</h3>
     <p className="text-sm text-text-muted leading-relaxed font-prose">{desc}</p>
   </div>
@@ -714,9 +714,9 @@ const Perk = ({ icon, title, sub, color }: { icon: React.ReactNode; title: strin
     <div className={cn(
       "w-10 h-10 rounded-xl flex items-center justify-center shrink-0",
       color === 'gold' ? "bg-luxury-gold/10 text-luxury-gold" :
-      color === 'teal' ? "bg-teal/10 text-teal" :
-      color === 'primary' ? "bg-primary/10 text-primary" :
-      "bg-navy/10 text-navy"
+        color === 'teal' ? "bg-teal/10 text-teal" :
+          color === 'primary' ? "bg-primary/10 text-primary" :
+            "bg-navy/10 text-navy"
     )}>
       {icon}
     </div>
@@ -751,7 +751,7 @@ const FaqItem = ({ q, a, isOpen, onClick }: { q: string; a: string; isOpen: bool
     "bg-app-bg border-1.5 rounded-2xl overflow-hidden transition-all duration-300",
     isOpen ? "border-border-2 shadow-sh-sm" : "border-border-light"
   )}>
-    <button 
+    <button
       onClick={onClick}
       className="w-full flex items-center justify-between p-5 text-left group"
     >

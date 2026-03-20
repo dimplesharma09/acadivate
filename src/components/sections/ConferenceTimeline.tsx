@@ -11,7 +11,7 @@ const TIMELINE = [
     location: 'Thailand',
     title: 'ICGSD 2024 – Global Sustainable Development',
     desc: 'International Conference on Global Sustainable Development with participation from multiple countries and strong academic engagement. Speakers from 8 nations shared groundbreaking research findings.',
-    image: 'https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=800&q=80',
+    image: 'assets/Image/image2024.png',
     stats: [
       { label: 'Countries', value: '8' },
       { label: 'Delegates', value: '120' },
@@ -23,7 +23,7 @@ const TIMELINE = [
     location: 'Dubai, UAE',
     title: 'ICGSD 2025 – Academic Innovation Summit',
     desc: 'Hosted at Abu Dhabi University with global delegates, keynote speakers, and indexed publication opportunities. A landmark event for cross-disciplinary academic exchange.',
-    image: 'https://images.unsplash.com/photo-1524178232363-1fb2b075b655?w=800&q=80',
+    image: 'assets/Image/image2025.png',
     stats: [
       { label: 'Countries', value: '11' },
       { label: 'Delegates', value: '210' },
@@ -35,7 +35,7 @@ const TIMELINE = [
     location: 'Malaysia',
     title: 'ICASD 2026 – Advancing Sustainable Development',
     desc: '3rd International Conference on Advancing Sustainable Development — focusing on innovation, intelligence, and global impact. Expected 300+ delegates from 15+ countries.',
-    image: 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&q=80',
+    image: 'assets/Image/image2026.png',
     stats: [
       { label: 'Countries', value: '15+' },
       { label: 'Expected', value: '300+' },
@@ -65,11 +65,10 @@ export const ConferenceTimeline = () => {
             <button
               key={item.year}
               onClick={() => setActiveYear(item.year)}
-              className={`px-8 py-3 rounded-2xl text-sm font-bold border-2 transition-all duration-300 ${
-                activeYear === item.year
-                  ? 'bg-linear-to-br from-navy to-navy-md text-white border-navy shadow-sh-lg scale-105'
-                  : 'bg-app-bg border-border-light text-text-muted hover:border-navy hover:text-navy'
-              }`}
+              className={`px-8 py-3 rounded-2xl text-sm font-bold border-2 transition-all duration-300 ${activeYear === item.year
+                ? 'bg-linear-to-br from-navy to-navy-md text-white border-navy shadow-sh-lg scale-105'
+                : 'bg-app-bg border-border-light text-text-muted hover:border-navy hover:text-navy'
+                }`}
             >
               {item.year}
             </button>
@@ -87,8 +86,8 @@ export const ConferenceTimeline = () => {
           >
             <div className="relative group">
               <div className="relative rounded-3xl overflow-hidden shadow-sh-xl aspect-video">
-                <img 
-                  src={activeData.image} 
+                <img
+                  src={activeData.image}
                   alt={activeData.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                 />

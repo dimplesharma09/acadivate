@@ -23,10 +23,10 @@ const ContactHero = () => (
     <div className="absolute -right-48 -bottom-48 w-[700px] h-[700px] rounded-full border border-white/10 pointer-events-none animate-pulse" />
     <div className="absolute -right-24 -bottom-24 w-[500px] h-[500px] rounded-full border border-white/10 pointer-events-none" />
     <div className="absolute -left-24 -top-24 w-[400px] h-[400px] rounded-full border border-white/5 pointer-events-none" />
-    
+
     <div className="max-w-7xl mx-auto px-6 relative z-10">
       <div className="grid lg:grid-cols-2 gap-16 items-center">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -41,7 +41,7 @@ const ContactHero = () => (
           <p className="text-lg text-white/70 leading-relaxed max-w-md mb-10">
             Reach out for academic collaboration, conferences, partnerships, awards, and global research initiatives.
           </p>
-          
+
           <div className="flex flex-wrap gap-4">
             <Button variant="gold" size="lg">
               Nominate Now <ArrowRight size={18} />
@@ -53,9 +53,9 @@ const ContactHero = () => (
         </motion.div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <ContactHeroCard icon={<Phone size={24} />} label="Call Us" value="+91 12345 67890" />
-          <ContactHeroCard icon={<Mail size={24} />} label="Email Us" value="info@acadivate.org" />
-          <motion.div 
+          <ContactHeroCard icon={<Phone size={24} />} label="Call Us" value="+91-7218 330037" />
+          <ContactHeroCard icon={<Mail size={24} />} label="Email Us" value="info@acadivate.com" />
+          <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             className="col-span-1 sm:col-span-2 p-8 rounded-3xl bg-white/10 border border-white/20 backdrop-blur-md"
@@ -66,7 +66,7 @@ const ContactHero = () => (
               </div>
               <div>
                 <div className="text-[10px] font-bold uppercase tracking-widest text-white/50 mb-1">Headquarters</div>
-                <div className="text-white font-bold">S02, A-28, Sector 4, Noida, India</div>
+                <div className="text-white font-bold">46, Guruvadan, Jawahar Nagar, Amravati 444604</div>
               </div>
             </div>
           </motion.div>
@@ -99,7 +99,7 @@ const ContactMain = () => {
     <section className="py-24 bg-app-bg relative overflow-hidden">
       {/* Subtle Background Pattern */}
       <div className="absolute inset-0 opacity-[0.03] pointer-events-none" style={{ backgroundImage: 'radial-gradient(#001F3F 1px, transparent 1px)', backgroundSize: '40px 40px' }} />
-      
+
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
           {/* Left: Info */}
@@ -119,39 +119,39 @@ const ContactMain = () => {
             </p>
 
             <div className="space-y-6">
-              <ContactInfoItem 
-                icon={<Phone size={24} />} 
-                label="Call Us" 
-                sub="Academic Coordination" 
-                value="+91 12345 67890" 
+              <ContactInfoItem
+                icon={<Phone size={24} />}
+                label="Call Us"
+                sub="Academic Coordination"
+                value="+91-7218 330037"
                 color="bg-navy/10 text-navy"
               />
-              <ContactInfoItem 
-                icon={<Mail size={24} />} 
-                label="Email Us" 
-                sub="Official Communication" 
-                value="info@acadivate.org" 
+              <ContactInfoItem
+                icon={<Mail size={24} />}
+                label="Email Us"
+                sub="Official Communication"
+                value="info@acadivate.com"
                 color="bg-gold-pale text-gold"
               />
-              <ContactInfoItem 
-                icon={<MapPin size={24} />} 
-                label="Office Address" 
-                sub="India | Global Academic Network" 
-                value="S02, A-28, Sector 4, Noida, India" 
+              <ContactInfoItem
+                icon={<MapPin size={24} />}
+                label="Office Address"
+                sub="India | Global Academic Network"
+                value="46, Guruvadan, Jawahar Nagar,  Amravati 444604"
                 color="bg-teal-2 text-teal"
               />
             </div>
           </motion.div>
 
           {/* Right: Form */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             className="bg-app-bg rounded-[40px] p-8 md:p-12 border border-border-light shadow-sh-sm relative overflow-hidden"
           >
             <div className="absolute top-0 right-0 w-32 h-32 bg-gold/5 rounded-full -mr-16 -mt-16 pointer-events-none" />
-            
+
             <div className="text-[10px] font-bold tracking-[2px] uppercase text-gold mb-4">
               Enquiry Form
             </div>
@@ -210,11 +210,11 @@ const ContactMain = () => {
                 <label className="text-[11px] font-bold text-navy uppercase tracking-wider ml-1">Your Message *</label>
                 <div className="relative">
                   <MessageSquare className="absolute left-4 top-5 text-primary/40" size={18} />
-                  <textarea 
-                    rows={5} 
+                  <textarea
+                    rows={5}
                     maxLength={600}
                     onChange={(e) => setCharCount(e.target.value.length)}
-                    placeholder="Describe your enquiry in detail..." 
+                    placeholder="Describe your enquiry in detail..."
                     className="w-full pl-12 pr-4 py-4 rounded-2xl border-2 border-border-light bg-app-bg focus:border-primary focus:ring-0 outline-none transition-all resize-none shadow-sh-xs"
                   />
                 </div>
@@ -260,8 +260,8 @@ const ContactInfoItem = ({ icon, label, sub, value, color }: { icon: React.React
 const ContactActions = () => (
   <section className="py-24 bg-app-bg relative overflow-hidden">
     {/* Decorative elements */}
-    <div className="absolute top-0 left-0 w-full h-full opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'linear-gradient(45deg, #001F3F 25%, transparent 25%, transparent 50%, #001F3F 50%, #001F3F 75%, transparent 75%, transparent)' , backgroundSize: '100px 100px' }} />
-    
+    <div className="absolute top-0 left-0 w-full h-full opacity-[0.02] pointer-events-none" style={{ backgroundImage: 'linear-gradient(45deg, #001F3F 25%, transparent 25%, transparent 50%, #001F3F 50%, #001F3F 75%, transparent 75%, transparent)', backgroundSize: '100px 100px' }} />
+
     <div className="max-w-7xl mx-auto px-6 relative z-10">
       <div className="text-center mb-16">
         <p className="text-[11px] font-bold uppercase tracking-[3px] text-gold mb-3">How Can We Help</p>
@@ -269,21 +269,21 @@ const ContactActions = () => (
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-        <ActionCard 
-          icon={<MessageSquare size={32} />} 
-          title="Academic Consultation" 
+        <ActionCard
+          icon={<MessageSquare size={32} />}
+          title="Academic Consultation"
           desc="Connect with Acadivate's academic coordination team to discuss conferences and research participation."
           color="bg-navy/10 text-navy"
         />
-        <ActionCard 
-          icon={<Users size={32} />} 
-          title="Institutional Collaboration" 
+        <ActionCard
+          icon={<Users size={32} />}
+          title="Institutional Collaboration"
           desc="Partner with Acadivate as an Academic or Knowledge Partner to gain international exposure and recognition."
           color="bg-gold-pale text-gold"
         />
-        <ActionCard 
-          icon={<FileText size={32} />} 
-          title="Academic Queries & Support" 
+        <ActionCard
+          icon={<FileText size={32} />}
+          title="Academic Queries & Support"
           desc="Find answers related to conferences, publications, awards criteria, and participation processes."
           color="bg-teal-2 text-teal"
         />
@@ -314,7 +314,7 @@ const ContactGlobal = () => (
     <div className="absolute -right-60 -top-60 w-[800px] h-[800px] rounded-full border border-white/5 pointer-events-none" />
     <div className="absolute -right-40 -top-40 w-[600px] h-[600px] rounded-full border border-white/5 pointer-events-none" />
     <div className="absolute -left-20 -bottom-20 w-[400px] h-[400px] rounded-full border border-white/5 pointer-events-none" />
-    
+
     <div className="max-w-7xl mx-auto px-6 relative z-10">
       <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16">
         <div>

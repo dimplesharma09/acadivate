@@ -4,7 +4,7 @@ import * as React from 'react';
 import { Check, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
-import { Button } from '../ui/Button';
+// import { Button } from '../ui/Button';
 
 const TABS = [
   {
@@ -77,28 +77,28 @@ export const About = () => {
           >
             <div className="relative rounded-3xl overflow-hidden shadow-sh-xl">
               <img
-                src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?w=800&q=80"
+                src="https://images.unsplash.com/photo-1558008258-3256797b43f3?w=300&q=70"
                 alt="Acadivate Foundation"
                 className="w-full h-[520px] object-cover"
               />
               <div className="absolute inset-0 bg-linear-to-t from-navy/40 to-transparent" />
             </div>
 
-            <div className="absolute -bottom-6 -right-6 bg-gold rounded-3xl p-6 shadow-sh-gold max-w-[200px]">
+            {/* <div className="absolute -bottom-6 -right-6 bg-gold rounded-3xl p-6 shadow-sh-gold max-w-[200px]">
               <div className="text-4xl font-extrabold text-navy leading-none mb-2">
                 25<span className="text-xl opacity-60 ml-1">+</span>
               </div>
               <div className="text-[11px] font-bold tracking-wider uppercase text-navy/70 leading-tight">
                 International Conferences Organized
               </div>
-            </div>
+            </div> */}
 
             <div className="absolute top-6 -left-6 bg-navy rounded-2xl p-4 shadow-sh-lg border border-white/10">
               <div className="text-gold text-[10px] font-bold tracking-widest uppercase mb-1">Est.</div>
               <div className="text-2xl font-extrabold text-white">2022</div>
             </div>
 
-            <div className="flex gap-3 mt-6">
+            {/* <div className="flex gap-3 mt-6">
               {[
                 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=300&q=70',
                 'https://images.unsplash.com/photo-1558008258-3256797b43f3?w=300&q=70',
@@ -108,7 +108,7 @@ export const About = () => {
                   <img src={img} alt="" className="w-full h-full object-cover" />
                 </div>
               ))}
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
@@ -171,11 +171,11 @@ export const About = () => {
                       </div>
                     ))}
                   </div>
-                  <a href="/about">
+                  {/* <a href="/about">
                     <Button variant="primary" size="md">
                       Learn More <ArrowRight size={18} />
                     </Button>
-                  </a>
+                  </a> */}
                 </motion.div>
               </AnimatePresence>
             </div>
