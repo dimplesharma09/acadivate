@@ -11,11 +11,11 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 pb-14 border-b border-white/10">
           <div>
-              <Link href="/" className="flex items-center gap-3 shrink-0 mb-4 bg-white w-fit rounded-lg px-4 py-2">
-          <div>
-            <img src="/assets/Image/Acadivate logo-transpernt.png" width={150} height={120} alt="Logo" />
-          </div>
-        </Link>
+            <Link href="/" className="flex items-center gap-3 shrink-0 mb-4 bg-white w-fit rounded-lg px-4 py-2">
+              <div>
+                <img src="/assets/Image/Acadivate logo-transpernt.png" width={150} height={120} alt="Logo" />
+              </div>
+            </Link>
             <p className="text-sm text-white/80 leading-relaxed mb-8 max-w-[255px]">
               Advancing research excellence, innovation, and interdisciplinary academic collaboration globally since 2022.
             </p>
@@ -65,9 +65,9 @@ export const Footer = () => {
               Contact
             </div>
             <div className="space-y-4">
-              <ContactItem icon={<Phone size={14} />} label="Phone" value="+91 99999 99999" />
-              <ContactItem icon={<Mail size={14} />} label="Email" value="info@acadivate.org" />
-              <ContactItem icon={<MapPin size={14} />} label="HQ" value="S02, A-28, Sector 4, Noida, India" />
+              <ContactItem icon={<Phone size={14} />} label="Phone" value="+91-7218 330037" />
+              <ContactItem icon={<Mail size={14} />} label="Email" value="info@acadivate.com" />
+              <ContactItem icon={<MapPin size={14} />} label="HQ" value="46, Guruvadan, Jawahar Nagar,  Amravati 444604" />
             </div>
           </div>
         </div>

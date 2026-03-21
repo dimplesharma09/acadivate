@@ -5,13 +5,14 @@ import { motion } from 'motion/react';
 import { Button } from '../ui/Button';
 import Link from 'next/link';
 
+// 1. Array mein logo field add kiya hai (abhi sabke liye '/uod.jpg' rakha hai)
 const RANKINGS = [
-  { pos: 1, name: 'Indian Institute of Technology Delhi', location: 'New Delhi, India', score: 94.8 },
-  { pos: 2, name: 'Indian Institute of Science Bangalore', location: 'Bengaluru, India', score: 93.2 },
-  { pos: 3, name: 'IIT Bombay', location: 'Mumbai, India', score: 91.5 },
-  { pos: 4, name: 'Manipal University Malaysia', location: 'Nilai, Malaysia', score: 89.7 },
-  { pos: 5, name: 'Abu Dhabi University', location: 'Abu Dhabi, UAE', score: 87.3 },
-  { pos: 6, name: 'University of Hyderabad', location: 'Hyderabad, India', score: 85.9 }
+  { pos: 1, name: 'Indian Institute of Technology Delhi', location: 'New Delhi, India', score: 94.8, logo: 'assets/Image/delhi.jpg' },
+  { pos: 2, name: 'Indian Institute of Science Bangalore', location: 'Bengaluru, India', score: 93.2, logo: 'assets/Image/iios.jpg' },
+  { pos: 3, name: 'IIT Bombay', location: 'Mumbai, India', score: 91.5, logo: 'assets/Image/iitbombey.jpg' },
+  { pos: 4, name: 'Manipal University Malaysia', location: 'Nilai, Malaysia', score: 89.7, logo: 'assets/Image/download.jpeg' },
+  { pos: 5, name: 'Abu Dhabi University', location: 'Abu Dhabi, UAE', score: 87.3, logo: 'assets/Image/abudabi.png' },
+  { pos: 6, name: 'University of Hyderabad', location: 'Hyderabad, India', score: 85.9, logo: 'assets/Image/hydrabad.jpeg' }
 ];
 
 export const Rankings = () => {
@@ -61,17 +62,26 @@ export const Rankings = () => {
             viewport={{ once: true }}
             className="bg-app-bg border-1.5 border-border-light rounded-3xl overflow-hidden shadow-sh-md"
           >
-            <div className="grid grid-cols-[40px_1fr_auto] gap-4 p-4 bg-primary text-[9.5px] font-bold tracking-widest uppercase text-white/40">
+            {/* 2. Grid columns ko update kiya hai: grid-cols-[40px_48px_1fr_auto] */}
+            <div className="grid grid-cols-[40px_48px_1fr_auto] gap-4 p-4 bg-primary text-[9.5px] font-bold tracking-widest uppercase text-white/40">
               <div>#</div>
+              <div>Logo</div>
               <div>Institution</div>
               <div className="text-right">Score</div>
             </div>
             <div className="divide-y divide-border-light">
               {RANKINGS.map((rank) => (
-                <div key={rank.pos} className="grid grid-cols-[40px_1fr_auto] gap-4 p-5 items-center hover:bg-navy/5 transition-colors cursor-pointer group">
+                // 3. Row grid ko bhi update kiya hai
+                <div key={rank.pos} className="grid grid-cols-[40px_48px_1fr_auto] gap-4 p-5 items-center hover:bg-navy/5 transition-colors cursor-pointer group">
                   <div className={`text-sm font-bold ${rank.pos <= 2 ? 'text-gold' : 'text-navy'}`}>
                     {rank.pos}
                   </div>
+
+                  {/* 4. Logo Image section add kiya hai */}
+                  <div className="w-10 h-10 rounded-full overflow-hidden border border-border-light bg-white flex items-center justify-center shrink-0">
+                    <img src={rank.logo} alt={rank.name} className="w-full h-full object-contain p-1" />
+                  </div>
+
                   <div>
                     <div className="text-[13.5px] font-bold text-navy group-hover:text-gold transition-colors">{rank.name}</div>
                     <div className="flex items-center gap-1.5 text-[11.5px] font-medium text-text-muted mt-1">

@@ -17,7 +17,7 @@ const EVENTS = [
     date: { day: '21', month: 'May' },
     time: '09:00 AM',
     location: 'Kuala Lumpur, Malaysia',
-    image: 'https://picsum.photos/seed/ev1/500/400',
+    image: 'assets/Image/conference.jpeg',
     tags: ['Sustainability', 'Innovation']
   },
   {
@@ -29,7 +29,7 @@ const EVENTS = [
     date: { day: '22', month: 'Jul' },
     time: '10:00 AM',
     location: 'Dubai, UAE',
-    image: 'https://picsum.photos/seed/ev2/500/400',
+    image: 'assets/Image/conference1.jpeg',
     tags: ['Global', 'Research']
   },
   {
@@ -41,7 +41,7 @@ const EVENTS = [
     date: { day: '15', month: 'Sep' },
     time: '06:00 PM',
     location: 'New Delhi, India',
-    image: 'https://picsum.photos/seed/ev3/500/400',
+    image: 'assets/Image/confrence2.jpeg',
     tags: ['Awards', 'Recognition']
   },
   {
@@ -53,7 +53,7 @@ const EVENTS = [
     date: { day: '10', month: 'Aug' },
     time: '09:00 AM',
     location: 'Online / India',
-    image: 'https://picsum.photos/seed/ev4/500/400',
+    image: 'assets/Image/conference3.jpeg',
     tags: ['FDP', 'Online']
   }
 ];

@@ -18,7 +18,7 @@ export const Header = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  
+
 
 
   React.useEffect(() => {
@@ -44,8 +44,8 @@ export const Header = () => {
           <NavDropdown label="Events">
             <DropdownItem href="/events/international-conferences" icon={<Users size={14} />} label="International Conferences" />
             <DropdownItem href="/events/upcoming-events" icon={<Calendar size={14} />} label="Upcoming Events" />
-            <DropdownItem href="/events/research-forums" icon={<BookOpen size={14} />} label="Research Forums" />
-            <DropdownItem href="/events/workshops-fdp" icon={<GraduationCap size={14} />} label="Workshops & FDPs" />
+            {/* <DropdownItem href="/events/research-forums" icon={<BookOpen size={14} />} label="Research Forums" />
+            <DropdownItem href="/events/workshops-fdp" icon={<GraduationCap size={14} />} label="Workshops & FDPs" /> */}
           </NavDropdown>
           <MegaMenu />
           <NavDropdown label="Rankings">
@@ -58,7 +58,7 @@ export const Header = () => {
 
         <div className="flex items-center gap-3">
           <div className="hidden sm:flex items-center gap-2">
-            <Button variant="ghost"  className="hidden xl:flex text-black hover:bg-white/10">Sign In</Button>
+            <Button variant="ghost" className="hidden xl:flex text-black hover:bg-white/10">Sign In</Button>
             <Button variant="primary" >Get Started</Button>
           </div>
 
@@ -81,8 +81,8 @@ export const Header = () => {
           <div className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-white/40 mt-4">Events</div>
           <MobileNavLink href="/events/international-conferences">International Conferences</MobileNavLink>
           <MobileNavLink href="/events/upcoming-events">Upcoming Events</MobileNavLink>
-          <MobileNavLink href="/events/research-forums">Research Forums</MobileNavLink>
-          <MobileNavLink href="/events/workshops-fdp">Workshops & FDPs</MobileNavLink>
+          {/* <MobileNavLink href="/events/research-forums">Research Forums</MobileNavLink>
+          <MobileNavLink href="/events/workshops-fdp">Workshops & FDPs</MobileNavLink> */}
 
           <div className="px-3 py-2 text-[11px] font-bold uppercase tracking-widest text-white/40 mt-4">More</div>
           <MobileNavLink href="/awards">Awards</MobileNavLink>
@@ -131,7 +131,7 @@ const DropdownItem = ({ icon, label, href }: { icon: React.ReactNode; label: str
     className="flex items-center gap-4 px-3 py-3 rounded-2xl text-[14px] font-bold text-navy hover:bg-bg-soft hover:text-primary transition-all duration-200 group/item"
   >
     <div className="w-10 h-10 rounded-xl bg-primary/5 flex items-center justify-center text-primary shrink-0 group-hover/item:bg-primary/10 transition-colors">
-   {React.cloneElement(icon as React.ReactElement<{ size?: number }>, { size: 18 })}
+      {React.cloneElement(icon as React.ReactElement<{ size?: number }>, { size: 18 })}
     </div>
     <span className="leading-tight">{label}</span>
   </Link>
