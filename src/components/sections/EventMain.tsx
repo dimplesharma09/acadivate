@@ -2,9 +2,9 @@
 
 import * as React from 'react';
 import { motion } from 'motion/react';
-import { 
-  Share2, Linkedin, Twitter, Facebook, Link as LinkIcon, 
-  Clock, Calendar, MapPin, FileText, User, Star, 
+import {
+  Share2, Linkedin, Twitter, Facebook, Link as LinkIcon,
+  Clock, Calendar, MapPin, FileText, User, Star,
   CheckCircle2, Info, AlertCircle, Quote, ArrowRight,
   List
 } from 'lucide-react';
@@ -50,19 +50,19 @@ export const EventMain = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid lg:grid-cols-[1fr_360px] gap-12 lg:gap-16 items-start">
-          
+
           {/* Main Article Content */}
           <article className="space-y-12">
             {/* Featured Image */}
-            <motion.div 
+            <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="relative rounded-[2rem] overflow-hidden shadow-sh-lg group"
             >
-              <img 
-                src="https://picsum.photos/seed/icasd2026main/1200/620" 
-                alt="ICASD 2026 Kuala Lumpur Convention Centre" 
+              <img
+                src="/assets/Image/events-malasiya.jpg"
+                alt="ICASD 2026 Kuala Lumpur Convention Centre"
                 className="w-full aspect-video object-cover group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-linear-to-t from-navy/80 via-transparent to-transparent opacity-60" />
@@ -143,29 +143,29 @@ export const EventMain = () => {
                 </p>
 
                 <div className="grid md:grid-cols-2 gap-6 not-prose mt-8">
-                  <OrganizerCard 
-                    name="Dr. Arjun Sharma" 
-                    role="Conference Chair" 
-                    org="Acadivate ARIF" 
-                    image="https://picsum.photos/seed/org1/100/100" 
+                  <OrganizerCard
+                    name="Dr. Arjun Sharma"
+                    role="Conference Chair"
+                    org="Acadivate ARIF"
+                    image="https://picsum.photos/seed/org1/100/100"
                   />
-                  <OrganizerCard 
-                    name="Prof. Rajan Mehta" 
-                    role="Technical Programme Chair" 
-                    org="Manipal International University" 
-                    image="https://picsum.photos/seed/org2/100/100" 
+                  <OrganizerCard
+                    name="Prof. Rajan Mehta"
+                    role="Technical Programme Chair"
+                    org="Manipal International University"
+                    image="https://picsum.photos/seed/org2/100/100"
                   />
-                  <OrganizerCard 
-                    name="Dr. Priya Nair" 
-                    role="Publications Chair" 
-                    org="Acadivate ARIF" 
-                    image="https://picsum.photos/seed/org3/100/100" 
+                  <OrganizerCard
+                    name="Dr. Priya Nair"
+                    role="Publications Chair"
+                    org="Acadivate ARIF"
+                    image="https://picsum.photos/seed/org3/100/100"
                   />
-                  <OrganizerCard 
-                    name="Ms. Ananya Kapoor" 
-                    role="Events & Logistics Manager" 
-                    org="Acadivate ARIF" 
-                    image="https://picsum.photos/seed/org4/100/100" 
+                  <OrganizerCard
+                    name="Ms. Ananya Kapoor"
+                    role="Events & Logistics Manager"
+                    org="Acadivate ARIF"
+                    image="https://picsum.photos/seed/org4/100/100"
                   />
                 </div>
               </section>
@@ -200,7 +200,7 @@ export const EventMain = () => {
               </section>
 
               <div className="not-prose my-16 rounded-[2rem] overflow-hidden shadow-sh-lg group">
-                <img src="https://picsum.photos/seed/klcc2/1200/500" alt="KLCC Kuala Lumpur" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
+                <img src="/assets/Image/conferencebanner.jpg" alt="KLCC Kuala Lumpur" className="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-700" />
                 <div className="p-6 bg-bg-soft border-t border-border-light flex items-center gap-3 text-sm text-text-muted italic">
                   <Info size={16} className="text-gold" />
                   The Kuala Lumpur Convention Centre — a world-class venue adjacent to the iconic Petronas Twin Towers
@@ -318,24 +318,24 @@ export const EventMain = () => {
               <h2 className="text-2xl font-serif font-bold text-navy mb-10 flex items-center gap-4">
                 Discussion <span className="text-sm font-sans font-bold text-text-muted bg-bg-soft px-3 py-1 rounded-full">3 comments</span>
               </h2>
-              
+
               <div className="space-y-8 mb-12">
-                <CommentItem 
-                  name="Prof. Lim Wei Hong" 
-                  date="02 March 2026" 
-                  text="Excellent coverage of the ICASD 2026 organizing team. Attended ICGSD 2024 in Thailand — quality of peer-reviewed sessions was consistently outstanding. Looking forward to KL in May." 
+                <CommentItem
+                  name="Prof. Lim Wei Hong"
+                  date="02 March 2026"
+                  text="Excellent coverage of the ICASD 2026 organizing team. Attended ICGSD 2024 in Thailand — quality of peer-reviewed sessions was consistently outstanding. Looking forward to KL in May."
                   image="https://picsum.photos/seed/cmnt1/60/60"
                 />
-                <CommentItem 
-                  name="Dr. Fatima Al-Rashid" 
-                  date="04 March 2026" 
-                  text="Could someone confirm whether virtual attendance includes access to all plenary sessions and proceedings? Our team in Riyadh may not be able to travel." 
+                <CommentItem
+                  name="Dr. Fatima Al-Rashid"
+                  date="04 March 2026"
+                  text="Could someone confirm whether virtual attendance includes access to all plenary sessions and proceedings? Our team in Riyadh may not be able to travel."
                   image="https://picsum.photos/seed/cmnt2/60/60"
                 />
-                <CommentItem 
-                  name="Rahul Desai, PhD Candidate" 
-                  date="06 March 2026" 
-                  text="This is my first ICASD. The Scopus indexing pathway is a major attraction for early-career researchers like myself. Submitted my abstract yesterday!" 
+                <CommentItem
+                  name="Rahul Desai, PhD Candidate"
+                  date="06 March 2026"
+                  text="This is my first ICASD. The Scopus indexing pathway is a major attraction for early-career researchers like myself. Submitted my abstract yesterday!"
                   image="https://picsum.photos/seed/cmnt3/60/60"
                 />
               </div>
@@ -343,7 +343,7 @@ export const EventMain = () => {
               {/* Comment Form */}
               <div className="bg-app-bg border-1.5 border-border-light rounded-[2rem] p-8 lg:p-10 shadow-sh-sm relative overflow-hidden group">
                 <div className="absolute top-0 right-0 w-64 h-64 bg-primary/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-3xl" />
-                
+
                 <h3 className="text-xl font-bold text-navy mb-8 relative z-10">Leave a Comment</h3>
                 <form className="grid md:grid-cols-2 gap-6 relative z-10" onSubmit={(e) => e.preventDefault()}>
                   <div className="space-y-2">
@@ -395,8 +395,8 @@ export const EventMain = () => {
                     onClick={() => scrollToSection(link.id)}
                     className={cn(
                       "w-full flex items-center gap-4 px-4 py-3 rounded-xl text-sm font-medium transition-all group",
-                      activeSection === link.id 
-                        ? "bg-gold-pale text-gold font-bold" 
+                      activeSection === link.id
+                        ? "bg-gold-pale text-gold font-bold"
                         : "text-text-muted hover:bg-bg-soft hover:text-navy hover:pl-6"
                     )}
                   >
@@ -410,7 +410,7 @@ export const EventMain = () => {
             {/* Quick Info Card */}
             <div className="bg-app-bg border-1.5 border-border-light rounded-3xl overflow-hidden shadow-sh-sm group">
               <div className="h-28 relative overflow-hidden">
-                <img src="https://picsum.photos/seed/eventbanner/400/200" alt="ICASD 2026" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                <img src="/assets/Image/event banner.jpeg" alt="ICASD 2026" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                 <div className="absolute inset-0 bg-linear-to-t from-navy/80 to-transparent" />
                 <span className="absolute top-4 left-4 px-3 py-1 rounded-full bg-primary text-[9px] font-bold tracking-wider uppercase text-white shadow-sh-sm">Upcoming</span>
               </div>
@@ -451,8 +451,8 @@ export const EventMain = () => {
                     key={idx}
                     className={cn(
                       "w-full flex items-center justify-between px-4 py-3 rounded-xl text-sm font-medium transition-all",
-                      cat.active 
-                        ? "bg-gold-pale text-gold font-bold" 
+                      cat.active
+                        ? "bg-gold-pale text-gold font-bold"
                         : "text-text-muted hover:bg-bg-soft hover:text-navy hover:pl-6"
                     )}
                   >
@@ -512,8 +512,8 @@ const InfoItem = ({ icon, label, value, color }: { icon: React.ReactNode; label:
   <div className="flex items-start gap-3">
     <div className={cn(
       "w-7 h-7 rounded-lg flex items-center justify-center shrink-0",
-      color === 'gold' ? "bg-gold-pale text-gold" : 
-      color === 'primary' ? "bg-primary/10 text-primary" : "bg-bg-2 text-navy"
+      color === 'gold' ? "bg-gold-pale text-gold" :
+        color === 'primary' ? "bg-primary/10 text-primary" : "bg-bg-2 text-navy"
     )}>
       {icon}
     </div>
