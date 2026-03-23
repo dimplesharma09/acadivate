@@ -10,9 +10,9 @@ export const EventHero = () => {
       {/* Background Pattern */}
       <div className="absolute inset-0 pointer-events-none">
         <div className="absolute inset-0 bg-linear-to-br from-primary via-primary-dark to-primary-deep opacity-90" />
-        <img 
-          src="https://picsum.photos/seed/klskyline/1600/700" 
-          alt="Kuala Lumpur" 
+        <img
+          src="/assets/Image/event3.png"
+          alt="ICAS-2026"
           className="w-full h-full object-cover opacity-20 grayscale-[30%]"
         />
       </div>

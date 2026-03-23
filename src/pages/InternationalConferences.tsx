@@ -14,7 +14,7 @@ const CONFERENCES = [
     desc: 'Join our call for papers international conference to present your work and network with global experts in Kuala Lumpur.',
     date: '21 May 2026',
     location: 'Kuala Lumpur, Malaysia',
-    image: 'https://picsum.photos/seed/conf1/600/400',
+    image: '/assets/Image/conferences1.jpg',
     slug: 'icas-2026'
   },
   {
@@ -23,7 +23,7 @@ const CONFERENCES = [
     desc: 'Global academic summit at Abu Dhabi University with keynote speakers, institutional leaders, and indexed publication opportunities.',
     date: '22 July 2025',
     location: 'Dubai, UAE',
-    image: 'https://picsum.photos/seed/conf2/600/400',
+    image: '/assets/Image/conference12.jpeg',
     slug: 'icgsd-2025'
   },
   {
@@ -32,21 +32,21 @@ const CONFERENCES = [
     desc: 'A premier gathering of researchers focusing on interdisciplinary studies and sustainable development goals.',
     date: '15 August 2026',
     location: 'Singapore',
-    image: 'https://picsum.photos/seed/conf3/600/400',
+    image: '/assets/Image/research-conferences.png',
     slug: 'grf-2026'
   }
 ];
 
 export const InternationalConferences = () => {
   return (
-    <div className="pt-20">
+    <div>
       {/* Hero Section */}
       <section data-annotate-id="international-conferences-hero-section" className="relative py-20 lg:py-32 bg-navy overflow-hidden">
         <div className="absolute inset-0 opacity-20">
-          <img src="https://picsum.photos/seed/confhero/1920/1080" alt="Hero" className="w-full h-full object-cover" />
+          <img src="/assets/Image/event3.png" alt="Hero" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-linear-to-b from-navy via-navy/80 to-navy" />
         </div>
-        
+
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <motion.div
             initial={{ opacity: 0, y: 20 }}

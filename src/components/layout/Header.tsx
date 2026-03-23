@@ -119,9 +119,11 @@ const NavDropdown = ({ label, children }: { label: string; children: React.React
       {label}
       <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
     </button>
-    <div className="absolute top-full left-0 mt-2 w-64 bg-app-bg border border-black/5 rounded-[1.5rem] shadow-sh-xl p-2 opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-soft z-50">
-      <div className="flex flex-col gap-1">
-        {children}
+    <div className="absolute top-full left-0 pt-2 w-64 opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-soft z-50">
+      <div className="bg-app-bg border border-black/5 rounded-[1.5rem] shadow-sh-xl p-2">
+        <div className="flex flex-col gap-1">
+          {children}
+        </div>
       </div>
     </div>
   </div>
@@ -145,8 +147,9 @@ const MegaMenu = () => (
       Awards
       <ChevronDown size={14} className="group-hover:rotate-180 transition-transform duration-300" />
     </Link>
-    <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[780px] bg-app-bg border border-black/5 rounded-[1.5rem] shadow-sh-xl overflow-hidden opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-soft z-50">
-      <div className="grid grid-cols-[1fr_1px_1fr_1px_1fr]">
+    <div className="absolute top-full left-1/2 -translate-x-1/2 pt-2 w-[780px] opacity-0 translate-y-[-10px] pointer-events-none group-hover:opacity-100 group-hover:translate-y-0 group-hover:pointer-events-auto transition-all duration-300 ease-soft z-50">
+      <div className="bg-app-bg border border-black/5 rounded-[1.5rem] shadow-sh-xl overflow-hidden">
+        <div className="grid grid-cols-[1fr_1px_1fr_1px_1fr]">
         <div className="p-6">
           <div className="text-[9.5px] font-bold tracking-[2px] uppercase text-text-muted mb-4 flex items-center gap-2 after:h-px after:flex-1 after:bg-border-light">
             Featured
@@ -194,6 +197,7 @@ const MegaMenu = () => (
         <Link href="/awards#nominate" className="text-[12.5px] font-bold text-gold flex items-center gap-2 transition-colors">
           Nominate Now — 2026 <ChevronDown size={14} className="-rotate-90" />
         </Link>
+      </div>
       </div>
     </div>
   </div>
